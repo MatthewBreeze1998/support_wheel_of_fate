@@ -8,7 +8,9 @@
 ## Soloution
 Support wheel of fate is a web and mobile application that will select at random 2 engineers from a list with a set of rules to follow. The application is composed of 2 different languages the front end runs on dart a language from google whereas the backend APIs and database are written in typeScript.
 
-
+| Desktop      | Mobile         |
+| ------------- |:-------------:|
+| <img width="1439" alt="webScreenView" src="https://user-images.githubusercontent.com/107928592/178708638-54069e11-acec-4ff7-8074-35742386c56a.png"> | <img width="371" alt="screen shot 2018-01-14 at 22 44 27" src="https://user-images.githubusercontent.com/107928592/178708852-c5db4112-da3f-454b-9c1d-9279eb277c39.png"> |
 
 #### Rules
 
