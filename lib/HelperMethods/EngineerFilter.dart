@@ -43,10 +43,14 @@ Engineer jsonToEngineer(var json) {
 List<Engineer> getSupportWorker(List<Engineer> availableEngineers) {
   var random = Random();
   int amSupportIndex = random.nextInt(availableEngineers.length);
-  int pmSupportIndex = random.nextInt(availableEngineers.length);
 
-  return [
-    availableEngineers[amSupportIndex],
-    availableEngineers[pmSupportIndex]
-  ];
+  int pmSupportIndex = random.nextInt(availableEngineers.length);
+  if (amSupportIndex == pmSupportIndex) {
+    return getSupportWorker(availableEngineers);
+  } else {
+    return [
+      availableEngineers[amSupportIndex],
+      availableEngineers[pmSupportIndex]
+    ];
+  }
 }

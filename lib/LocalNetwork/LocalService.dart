@@ -9,7 +9,7 @@ class LocalService {
   Future<List<Engineer>> getAvailableEngineers() async {
     try {
       var response =
-          await _httpClient.get("http://127.0.0.1:6060/getEngineers");
+          await _httpClient.get("http://localhost:6060/getEngineers");
       if (response.statusCode == 200 && response.data != null) {
         {
           List engineers = response.data["message"]["engineers"];
@@ -27,7 +27,7 @@ class LocalService {
   Future<List<Engineer>> getYesterdaysSupport() async {
     try {
       var response =
-          await _httpClient.get("http://127.0.0.1:6060/workedYesterday");
+          await _httpClient.get("http://localhost:6060/workedYesterday");
       if (response.statusCode == 200 && response.data != null) {
         {
           List engineers = response.data["message"]["engineers"];
